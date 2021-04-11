@@ -21,10 +21,30 @@
 - <img width="700" alt="d1 1" src="https://user-images.githubusercontent.com/76264061/114311308-de36a200-9b0b-11eb-9c95-b44a0c581b36.png">  
 
 ## Summary Statistics on Suspension Coils
-In Deliverable 2 we had to statistically calculate the mean, median and variance and were also asked to summarise the same based on manufactiring lot in the suspension coil datasets.  
+For Deliverable 2 we had to statistically calculate the mean, median and variance and were also asked to summarise the same based on manufactiring lot in the suspension coil datasets.  
 
 - Below are the tables that shows the Summary Coil depecting the mean, median and variance and the Manufacturing lot summary. From the Summary coil table you can infer that    the mean and the median values are close, by which the interpretation is that the data is normally distributed.
  <img width="700" alt="d2 1" src="https://user-images.githubusercontent.com/76264061/114313040-80f21f00-9b12-11eb-9a10-bebe6ac90385.png">
  <img width="700" alt="d2" src="https://user-images.githubusercontent.com/76264061/114313053-8cdde100-9b12-11eb-8eee-eff39440aeda.png">
 - the Summary coil table indicates a large standard deviation. A large standard deviation indicates that the data points are far from the mean, and a small standard deviation   indicates that they are clustered closely around the mean.
 - If the significance level of 0.05 percent, the p-value (0.06028) is above our significance level. The data is considered to have normal distribution. 
+
+## T-Tests on Suspension Coils
+ 
+For Deliverable 3 , one-sample t-test has been used to assert if there is a statistical difference between the means of a sample dataset The mean of the  hypothesized, potential population dataset is given as 1,500 pounds per inch. We also have to three more RScripts in  MechaCarChallenge.RScript using the t.test() function and its subset() argument to determine if the PSI for each manufacturing lot is statistically different from the population mean of 1,500 pounds per square inch. 
+
+<img width="700" alt="d3" src="https://user-images.githubusercontent.com/76264061/114314025-b4cf4380-9b16-11eb-935e-8f7c86ed4acc.png">
+
+- Assuming the significance level of 0.05 percent, the p-value (0.06028) is above our significance level. The data is considered to have normal distribution.Therefore, we do not have sufficient evidence to reject the null hypothesis, and we would state that the two means are statistically similar.
+
+- Population mean for Manufacturing Lot 1 
+
+<img width="262" alt="d3p1" src="https://user-images.githubusercontent.com/76264061/114314805-d7af2700-9b19-11eb-89bb-07d23973695d.png">
+
+- Population mean for Manufacturing Lot 2 
+
+<img width="315" alt="d3p2" src="https://user-images.githubusercontent.com/76264061/114314813-e39ae900-9b19-11eb-804b-0b9e045341ae.png">
+
+- Population mean  for Manufacturing Lot 3
+
+<img width="281" alt="d3p3" src="https://user-images.githubusercontent.com/76264061/114314832-f31a3200-9b19-11eb-93fa-d41566c107a4.png">
