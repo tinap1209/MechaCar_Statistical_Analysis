@@ -1,0 +1,23 @@
+library(tidyverse)
+# MPG Regression
+MechaCar_table <- read.csv('MechaCar_mpg.csv',check.names = F,stringsAsFactors = F)
+lm(mpg ~ AWD,data=MechaCar_table) #generate linear regression model
+summary(lm(mpg ~ AWD,data=MechaCar_table))
+lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle + ground_clearance + AWD ,data=MechaCar_table) #generate multiple linear regression model
+
+# Suspension Coil Summary
+summary(lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle + ground_clearance + AWD ,data=MechaCar_table)) #generate summary statistics
+Suspension_Coil_table <- read.csv('Suspension_Coil.csv', check.names = F, stringsAsFactors = F)
+head(Suspension_Coil_table)
+summary_coil <- Suspension_Coil_table %>% summarize(Mean_PSI=mean(PSI), Median_PSI=median(PSI), Variance_PSI=var(PSI), SD_PSI=sd(PSI))
+lot_summary <- Suspension_Coil_table %>% group_by(Manufacturing_Lot) %>% summarize(Mean=mean(PSI), Median=median(PSI), Variance=var(PSI), SD=sd(PSI))
+
+
+# Suspension Coil T-Test
+t.test(Suspension_Coil_table$PSI, mu=1500)
+popn1 <- subset(Suspension_Coil_table, Manufacturing_Lot=='Lot1') # Create subset for lot 1 cars
+t.test(x=pop1$PSI, mu=1500) # t test on lot 1 cars' PSI with a mean of 1500
+popn2 <- subset(Suspension_Coil_table, Manufacturing_Lot=='Lot2') # Create subset for lot 2 cars
+t.test(x=pop2$PSI, mu=1500) # t test on lot 2 cars' PSI with a mean of 1500
+popn3 <- subset(Suspension_Coil_table, Manufacturing_Lot=='Lot3') # Create subset for lot 3 cars
+t.test(x=pop3$PSI, mu=1500) # t test on lot 3 cars' PSI with a mean of 1500
