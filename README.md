@@ -48,3 +48,28 @@ For Deliverable 3 , one-sample t-test has been used to assert if there is a stat
 - Population mean  for Manufacturing Lot 3
 
 <img width="281" alt="d3p3" src="https://user-images.githubusercontent.com/76264061/114314832-f31a3200-9b19-11eb-93fa-d41566c107a4.png">
+
+## Study Design: MechaCar vs Competition
+The comparison data that would appeal to a consumer are the fuel efficiency, horse power, overall build,  cost of ownership, color options, reliability, inbuilt features etc. By tackling these data wisely, MechaCar can outperforms the competition.
+
+**Milage and Fuel efficiency**
+
+Fuel efficiency is a measure of how far a vehicle can travel per unit of fuel. We can use ANOVA tests for this purpose which is used to compare the means of a continuous numerical variable across a number of  groups. For conducting this test, mpg data of all the concerned manufacturers are required. 
+
+*H0: All cars offer the same mileage and fuel efficiency.*
+*H1: All cars do not offer same mileage and fuel efficiency.*
+
+**Cost**
+
+ The long-term cost of owning a car is considerably more than the actual price we pay for it. Ownership cost includes depreciation, fuel, maintenance, repairs, and insurance. The largest of these costs is depreciation - the loss in value over time. The question here is that the cost of MechaCars is less than or equal to that of other manufacturers. To compare the cost of various manufacturers we need to perform ANOVA test in which we need to have mainly cost and fuel efficiency data of all the concerned manufacturers.
+
+*H0: Cost of all car from all the manufacturers are the same.*
+*H1: The cost of all cars from all manufactureres are not the same.* 
+
+**Color**
+
+ Color options also play an important role for customers in car selection. The question here is that which color or colors are most opted by the customers of MechaCars. To perform the comparison of color options between various colors we need to do the statisticle analysis using the Chi-Squared Test which is mainly used for categorical variables. The chi-squared test is used to compare the distribution of frequencies across two groups.
+
+*H0: There is no significant difference between the preference of the colors of the cars.*
+*H1: There is a significant difference between the preference of the colors of the  cars.*
+
